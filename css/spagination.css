@@ -1,0 +1,14 @@
+.pagination{height: 40px;line-height: 40px;width: 100%;text-align: center;font-size: 0;}
+.pagination > a,.pagination p,.pagination input{display: inline-block;}
+.pagination > a{width: 24px;height: 26px;background: #f5f4f4;border:1px solid #dbdbdb;border-radius: 5px;text-align: center;color: #313131;font-size: 14px;line-height: 26px;margin-right: 10px;vertical-align: middle;}
+.pagination > a:hover,.pagination input[type="button"]:hover{background: #33bef5;color: #fff;}
+.pagination > a.active {background: #33bef5;color: #fff;}
+.pagination .last,.pagination .next{width: 29px;}
+.pagination .last{background: url(../images/last.png) center no-repeat;}
+.pagination .last:hover{background: url(../images/last02.png) center no-repeat;}
+.pagination .next{background: url(../images/next.png) center no-repeat;}
+.pagination .next:hover{background: url(../images/next02.png) center no-repeat;}
+.pagination .skip-to-page {margin-left: 10px;}
+.pagination .skip-tip {font-size: 14px;color: #313131;margin-right: 9px;margin-left: 10px;vertical-align: middle;}
+.pagination .jump-num {width: 22px;height: 13px;border:1px solid #dbdbdb;border-radius: 5px;outline: none;padding: 6px;vertical-align: middle;}
+.pagination .skip-to-page {width: 61px;height: 26px;background: #f5f4f4;color: #313131;border-radius:5px;border:1px solid #dbdbdb;outline: none;cursor: pointer;vertical-align: middle;}

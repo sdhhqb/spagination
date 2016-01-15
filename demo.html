@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>pagination</title>
+    <link rel="stylesheet" type="text/css" href="./css/spagination.css">
+    <style>
+		* {margin: 0;padding: 0;}
+		a {text-decoration: none;}
+		.content {height: 200px; margin: 0 20px; border: solid 1px #f1f1f1;}
+    </style>
+</head>
+<body>
+	<div class="content">pagination</div>
+	<div id="paging" class="pagination"></div>
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/spagination.js"></script>
+	<script>
+		// callback
+		function pageChange (curPage, totalPage) {
+			console.log("curPage: "+curPage);
+			console.log("totalPage: "+totalPage);
+		}
+		var pagination = new Pagination("paging", pageChange);
+		pagination.setPage({
+			totalPage: 20,
+			curPage: 1,
+			pageRange: 5,
+			even: true
+		});
+
+	</script>
+</body>
+</html>
